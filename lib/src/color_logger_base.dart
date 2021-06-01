@@ -1,4 +1,4 @@
-import 'package:dataLogger/src/enum/status_enum.dart';
+import 'package:color_logger/src/enum/status_enum.dart';
 
 class ColorLogger {
   void log(String text, { LogStatus status = LogStatus.success }) {

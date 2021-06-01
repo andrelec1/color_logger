@@ -1,4 +1,4 @@
-import 'package:dataLogger/color_logger.dart';
+import 'package:color_logger/color_logger.dart';
 import 'package:test/test.dart';
 
 void main() {

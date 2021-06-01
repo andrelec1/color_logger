@@ -1,6 +1,8 @@
 name: color_logger
 description: Simple way to color log in console.
 version: 1.0.0
+homepage: https://github.com/andrelec1/color_logger
+repository: https://github.com/andrelec1/color_logger
 
 environment:
   sdk: '>=2.10.0 <3.0.0'

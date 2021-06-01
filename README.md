@@ -1,7 +1,9 @@
+# Color Logger
+
+![Alt text](./screen.png "Exemple")
+
 ## Usage
-
 A simple usage example:
-
 ```dart
 import 'package:dataLogger/color_logger.dart';
 

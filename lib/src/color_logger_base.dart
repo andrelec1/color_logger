@@ -1,7 +1,8 @@
 import 'package:color_logger/src/enum/status_enum.dart';
 
 class ColorLogger {
-  void log(String text, { LogStatus status = LogStatus.success }) {
+  /// Output log timestamped with color and emoji
+  void log(String text, {LogStatus status = LogStatus.none}) {
     var timestamping = _getTimestamping();
     var emoji = LogStatusHelper.getEmoji(status);
     var statusString = LogStatusHelper.getStatusString(status, upperCase: true);
@@ -9,16 +10,19 @@ class ColorLogger {
     print(pen('[$timestamping][$emoji $statusString] $text'));
   }
 
+  /// Add leading zero for making string with 2 digits everytime.
   String _to2digit(int base) {
     var baseString = '0$base';
     return baseString.substring(baseString.length - 2);
   }
 
+  /// Add leading zero for making string with 3 digits everytime.
   String _to3digit(int base) {
     var baseString = '00$base';
     return baseString.substring(baseString.length - 3);
   }
 
+  /// Generate a string with datetime.
   String _getTimestamping() {
     var now = DateTime.now();
     var y = now.year.toString();

@@ -1,11 +1,11 @@
 name: color_logger
-description: Simple way to color log in console.
-version: 1.0.1
+description: Simple way to output timestamped logs messages with color in stdout.
+version: 1.0.2
 homepage: https://github.com/andrelec1/color_logger
 repository: https://github.com/andrelec1/color_logger
 
 environment:
-  sdk: '>=2.10.0 <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
 
 dev_dependencies:
   pedantic: ^1.9.0
